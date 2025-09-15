@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiservicios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"> Multiservicios</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca">Acerca De</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <button id="menu-toggle">☰</button>
+  </header>
+
+  <section id="inicio" class="hero">
+  <div class="hero-text">
+    <h1>Handyman services</h1>
+    <p>Soluciones de mantenimiento y reparación para hogares y negocios.</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+  </div>
+  <div class="hero-image">
+    <img src="Proyecto sin título_AME/Color v-1.gif" alt="Técnico multiservicios" />
+  </div>
+</section>
+	<section id="tresd" class="hero">
+  <div class="hero-text">
+    <h1>Handyman services, su solución</h1>
+  </div>
+		<main>
+    <model-viewer  
+      src="untitled.glb" 
+      alt="Modelo 3D" 
+      camera-controls 
+      auto-rotate 
+      shadow-intensity="1" 
+      ar 
+      ar-modes="webxr scene-viewer quick-look">
+    </model-viewer>
+  </main>
+ 
+</section>
+
+  <section id="servicios" class="services">
+    <h2>Servicios</h2>
+    <div class="service-list">
+      <div class="service">🔧 Reparaciones</div>
+      <div class="service">🧹 Limpieza</div>
+      <div class="service">💡 Electricidad</div>
+      <div class="service">🚰 Plomería</div>
+    </div>
+  </section>
+
+  <section id="acerca" class="about">
+    <h2>¿Quiénes Somos?</h2>
+    <p>Somos un equipo profesional con años de experiencia en servicios integrales para el hogar y empresas.</p>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Multiservicios. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

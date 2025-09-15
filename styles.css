@@ -1,0 +1,203 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a1f3d;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a1f3d;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: #0a1f3d;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+  color: white;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #F1A00B;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Visor 3D */
+    main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    width: 692px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: -235px;
+    }
+
+    model-viewer {
+    width: 103%;
+    max-width: 900px;
+    height: 660px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #A9B3DE;
+    }
+.services, .about, .contact {
+  padding: 2rem;
+  background: #122c54;
+}
+
+.services h2, .about h2, .contact h2 {
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(150px, 1fr));
+  gap: 1rem;
+}
+
+.service {
+  background: #1c3f7a;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: orange;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0a1f3d;
+  font-size: 0.9rem;
+}
+#tresd {
+    background-color: #DA0A0E;
+}
+
+
+/* Responsive */
+  
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #0a1f3d;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+	
+	.hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+#inicio .hero-image main {
+    background-color: #732F30;
+    width: 652px;
+    height: 522px;
+}
