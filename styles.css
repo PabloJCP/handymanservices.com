@@ -232,3 +232,39 @@ footer {
 }
 
  
+
+@media (max-width:300px){
+	#menu-toggle {
+    display: block;
+  }
+	
+	   main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    width: 335px;
+    top: 0px;
+    bottom: 0px;
+    height: 320px;
+    }
+
+    model-viewer {
+    width: 70%;
+    max-width: 450px;
+    height: 305px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #A9B3DE;
+    padding-right: 0px;
+    margin-top: 182px;
+    margin-right: 119px;
+    }
+#tresd .hero-text h1 {
+    margin-right: 123px;
+
+}
+}
