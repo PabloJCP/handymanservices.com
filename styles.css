@@ -233,7 +233,7 @@ footer {
 
  
 
-@media (max-width:348px){
+@media (max-width:360px){
 	#menu-toggle {
     display: block;
   }
